@@ -56,5 +56,13 @@ int main(int ac, char **av)
 	line[n - 1] = '\0';
 	words = splitw(line);
 
+	for (int i = 0; words[i]; i++)
+{
+        free(words[i]);
+}
+    free(words);
+
+    free(line);
+
 	return (0);
 }
