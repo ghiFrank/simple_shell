@@ -58,11 +58,11 @@ int main(int ac, char **av)
 
 	for (int i = 0; words[i]; i++)
 {
-        free(words[i]);
+	free(words[i]);
 }
-    free(words);
+	free(words);
 
-    free(line);
+	free(line);
 
 	return (0);
 }
